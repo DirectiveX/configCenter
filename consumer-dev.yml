@@ -1,5 +1,5 @@
 config:
-  info: oooooooooooooooo
+  info: 125aasga
 spring:
   rabbitmq:
     host: localhost
