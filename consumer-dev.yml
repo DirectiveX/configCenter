@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: consumer
+  security:
+    user:
+      name: jiahao
+      password: 123456
+  zipkin:
+    base-url: http://localhost:9411
+  sleuth:
+    sampler:
+      rate: 1
+  boot:
+    admin:
+      client:
+        url: http://localhost:8085
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+    health:
+      show-details: always
+eureka:
+  client:
+    serviceUrl:
+      # 这边是节点间通讯的地址，一般是访问地址+eureka/
+      defaultZone: http://jiahao:123456@eureka1:8080/eureka/
